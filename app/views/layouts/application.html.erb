@@ -14,20 +14,22 @@
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/"><i class="fa fa-users"></i> DevMatch</a>
+          <%= link_to "/", class: "navbar-brand" do %>
+            <i class="fa fa-users"></i> DevMatch
+          <% end %>
         </div>
         
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/">Sign In</a></li>
-            <li><a href="/">Sign Up</a></li>
+            <li><%= link_to "Sign In", "/"%></a></li>
+            <li><%= link_to "Sign Up", "/"%></a></li>
           </ul>
           
           <ul class="nav navbar-nav navbar-left">
-            <li><a href="/about">About</a></li>
-            <li><a href="/">Forums</a></li>
-            <li><a href="/">Support</a></li>
-            <li><a href="/">Shop</a></li>
+            <li><%= link_to "About", "/about"%></li>
+            <li><%= link_to "Forums", "/"%></li>
+            <li><%= link_to "Support", "/"%></li>
+            <li><%= link_to "Shop", "/"%></li>
           </ul>
         </div>
       </div>
