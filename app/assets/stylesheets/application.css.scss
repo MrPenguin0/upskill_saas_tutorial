@@ -18,6 +18,8 @@
  @import 'bootstrap';
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
  
  // Typography Styles  
  h1, h2, h3{
@@ -42,6 +44,27 @@
    font-weight: 800;
  }
  
+ .navbar-default .navbar-brand, 
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  &:hover{
+    color: white;
+    opacity: 0.75;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #5B86E5;
+  }
+}
+
+ 
  // Home Page Styles
  .home-callout {
     margin-top: -20px;
@@ -50,11 +73,3 @@
     color: white;
  }
  
-.navbar-default .navbar-brand, 
-.navbar-default .navbar-nav > li > a {
-  color: white;
-  &:hover{
-    color: white;
-    opacity: 0.75;
-  }
-}
