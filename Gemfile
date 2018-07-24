@@ -43,6 +43,9 @@ gem 'font-awesome-sass', '4.6.2'
 # 
 gem 'jquery-rails'
 
+# Use hirb for better display in console database
+gem 'hirb', '0.7.3'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
